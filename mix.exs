@@ -42,7 +42,10 @@ defmodule NewRelic.Mixfile do
       {:ssl_verify_fun, "~> 1.1"},
       {:telemetry, "~> 0.4"},
       # Optional Instrumentation:
-      {:ecto_sql, "~> 3.3", optional: true}
+      {:ecto_sql, "~> 3.3", optional: true},
+      {:mongodb, "~> 0.5.1", optional: true},
+      {:mongodb_ecto, "~> 0.1", optional: true}
+      # {:mongodb_ecto, "~> 1.0", optional: true}
     ]
   end
 

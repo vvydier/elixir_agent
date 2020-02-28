@@ -9,12 +9,14 @@ defmodule EctoExample.Router do
   get "/hello" do
     error_query(EctoExample.PostgresRepo)
     error_query(EctoExample.MySQLRepo)
+    error_query(EctoExample.MongoRepo)
 
     response =
       %{
         hello: "world",
         postgres_count: query_db(EctoExample.PostgresRepo),
-        mysql_count: query_db(EctoExample.MySQLRepo)
+        mysql_count: query_db(EctoExample.MySQLRepo),
+        mongo_count: query_db(EctoExample.MongoRepo)
       }
       |> Jason.encode!()
 

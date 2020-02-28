@@ -30,7 +30,9 @@ defmodule EctoExample.MixProject do
       {:new_relic_agent, path: "../../../"},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:myxql, ">= 0.0.0"}
+      {:myxql, ">= 0.0.0"},
+      {:mongodb, "~> 0.5.1"},
+      # {:mongodb_ecto, "~> 0.2.1"}
     ]
   end
 
