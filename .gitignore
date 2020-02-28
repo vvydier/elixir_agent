@@ -3,6 +3,7 @@
 /doc
 erl_crash.dump
 *.ez
+*.iml
 tmp
 config/secret.exs
 .DS_Store
